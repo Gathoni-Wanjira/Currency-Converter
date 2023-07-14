@@ -66,3 +66,61 @@ nav {
 .nav-links ul li:hover::after {
   width: 100%;
 }
+#currencies {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  margin-top: 100px;
+}
+#exchange-icon {
+  width: min-content;
+  height: min-content;
+}
+#Base-currency {
+  padding: 32px;
+  background-color: #1b263b;
+  font-size: large;
+  font-weight: bold;
+  border-radius: 12px;
+  color: #ede0d4;
+}
+
+#Target-currency {
+  padding: 32px;
+  background-color: #1b263b;
+  font-size: large;
+  font-weight: bold;
+  border-radius: 12px;
+  color: #ede0d4;
+}
+#figures {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  gap: 150px;
+  margin-top: 0;
+}
+#exact-base-figure {
+  padding: 20px;
+  background-color: #1b263b;
+  color: #ede0d4;
+  border-radius: 10px;
+  font-size: large;
+  font-weight: bold;
+}
+#convert-btn {
+  padding: 15px;
+  color: #1b263b;
+  background-color: #ede0d4;
+  font-size: large;
+  font-weight: bold;
+  border: 1px solid #1b263b;
+}
+#exact-target-figure {
+  padding: 20px;
+  background-color: #1b263b;
+  color: #ede0d4;
+  border-radius: 10px;
+  font-size: large;
+  font-weight: bold;
+}
