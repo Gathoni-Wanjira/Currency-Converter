@@ -1,61 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Currency-Converter</title>
     <link rel="stylesheet" href="./styles.css" />
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=PT+Sans&family=Poppins&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-mrkssjMjTzZLtupSeFdYiMixdsUnU4ejwQ&usqp=CAU"
+    />
+  </head>
 
-<body>
+  <body>
     <nav>
-        <img src="./images/Balance Scale.jpeg" id="logo-img" alt="logoimg" />
-        <a href="#" id="logo">CURRENCY-CONVERTER</a>
-        <div class="nav-links">
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">CONVERT</a></li>
-                <li><a href="#">HISTORY</a></li>
-            </ul>
-        </div>
+      <img src="./images/Balance Scale.jpeg" id="logo-img" alt="logoimg" />
+      <a href="#" id="logo">CURRENCY-CONVERTER</a>
+      <div class="nav-links">
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">CONVERT</a></li>
+          <li><a href="#">HISTORY</a></li>
+        </ul>
+      </div>
     </nav>
     <section id="currencies">
-        <div id="from-currency">
-            <select id="Base-currency">
-                <option value="" disabled selected>USD</option>
-                <option value="option1">TZS</option>
-                <option value="option2">KES</option>
-                <option value="option3">USH</option>
-            </select>
-        </div>
+      <div id="from-currency">
+        <select id="Base-currency">
+          <option value="" disabled selected>USD</option>
+          <option value="option1">TZS</option>
+          <option value="option2">KES</option>
+          <option value="option3">USH</option>
+        </select>
+      </div>
 
-        <div id="exchange-icon">
-            <img src="./images/Exchange Icon.jpeg" alt="exchange-icon" />
-        </div>
+      <div id="exchange-icon">
+        <img src="./images/Exchange2.jpeg" alt="exchange-icon" />
+      </div>
 
-        <div id="to-currency">
-            <select id="Target-currency">
-                <option value="" disabled selected>KES</option>
-                <option value="option1">TRY</option>
-                <option value="option2">USD</option>
-                <option value="option3">USH</option>
-            </select>
-        </div>
+      <div id="to-currency">
+        <select id="Target-currency">
+          <option value="" disabled selected>KES</option>
+          <option value="option1">TRY</option>
+          <option value="option2">USD</option>
+          <option value="option3">USH</option>
+        </select>
+      </div>
     </section>
 
     <section id="figures">
-        <div id="Base-figure">
-            <p id="exact-base-figure">1</p>
-        </div>
-        <div id="convert">
-            <button id="convert-btn">CONVERT</button>
-        </div>
-        <div id="Target-figure">
-            <p id="exact-target-figure">141</p>
-        </div>
+      <div id="Base-figure">
+        <p id="exact-base-figure">1</p>
+      </div>
+      <div id="convert">
+        <button id="convert-btn">CONVERT</button>
+      </div>
+      <div id="Target-figure">
+        <p id="exact-target-figure">141</p>
+      </div>
     </section>
-</body>
-
+  </body>
 </html>
