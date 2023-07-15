@@ -153,6 +153,8 @@ option {
     text-align: center;
 }
 
-#Base-figure {
-    flex: 0 1 auto;
+
+.figures-containers{
+    flex: 0 8%;
+
 }
