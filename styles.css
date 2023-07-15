@@ -119,7 +119,7 @@ nav {
   border-bottom: 1px solid #1b263b;
   font-size: 4em;
   font-weight: bold;
-  width: 50px;
+  width: 100%;
  outline: none;
 
 
@@ -134,13 +134,13 @@ nav {
   margin-top: 20px;
 }
 #exact-target-figure {
-    margin: 0px;
-  padding:20px;
+ margin: 0px;
   color: #1b263b;
   border-bottom: 1px solid #1b263b;
   font-size: 4em;
   font-weight: bold;
-  width: 50px;
+  width: 100%;
+  overflow: hidden;
 }
 option {
   border-radius: 5px;
