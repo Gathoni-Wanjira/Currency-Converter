@@ -99,14 +99,17 @@ nav {
   justify-content: center;
   gap: 150px;
   margin-top: 30px;
+  
 }
 #exact-base-figure {
-  padding: 20px;
+  padding: 18px;
   background-color: #1b263b;
   color: #ede0d4;
   border-radius: 10px;
   font-size: large;
   font-weight: bold;
+  width: 25px;
+ margin-top: 15px;
 }
 #convert-btn {
   padding: 15px;
