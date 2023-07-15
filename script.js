@@ -2,6 +2,7 @@ const accessToken = "6jY5ZUmhFf4vw6ULUFhR4e9AJznJ01fO";
 const baseCurrency = document.getElementById("Base-currency")
 const targetCurrency = document.getElementById("Target-currency")
 const convertBtn = document.getElementById("convert-btn")
+const inputAmount = document.getElementById("exact-base-figure")
 
 document.addEventListener("DOMContentLoaded", (e) => {
 
@@ -39,7 +40,7 @@ convertBtn.addEventListener("click", (e) => {
     console.log("ghjhgf")
     e.preventDefault();
 
-    fetch(`https://api.currencybeacon.com/v1/convert?type=fiat&api_key=${accessToken}`)
+    fetch(`https://api.currencybeacon.com/v1/convert?from=baseCurrency.value&to=targetCurrency.value&amount=inputAmount.value&api_key=${accessToken}`)
         .then(response => response.json())
         .then(conversion => {
             console.log(conversion);
