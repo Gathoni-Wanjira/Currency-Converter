@@ -110,7 +110,6 @@ nav {
   align-items: flex-end;
   justify-content: center;
   
-  
 }
 #exact-base-figure {
   padding: 18px;
@@ -121,8 +120,6 @@ nav {
   font-weight: bold;
   width: 100%;
  outline: none;
-
-
 }
 #convert-btn {
   padding: 15px;
@@ -152,7 +149,6 @@ option {
    
     text-align: center;
 }
-
 
 .figures-containers{
     flex: 0 8%;
