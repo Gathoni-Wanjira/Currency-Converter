@@ -1,10 +1,10 @@
-*{
-    font-family: 'Roboto', sans-serif;  
+* {
+  font-family: "Roboto", sans-serif;
 }
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 nav {
   display: flex;
@@ -12,7 +12,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: #1b263b;
-  
 }
 
 #logo {
@@ -110,14 +109,14 @@ nav {
   justify-content: center;
 }
 #exact-base-figure {
-  padding: 18px;
   color: #1b263b;
   border: 0px;
   border-bottom: 1px solid #1b263b;
   font-size: 4em;
   font-weight: bold;
   width: 100%;
- outline: none;
+  outline: none;
+  text-align: center;
 }
 #convert-btn {
   padding: 15px;
@@ -129,7 +128,7 @@ nav {
   margin-top: 20px;
 }
 #exact-target-figure {
- margin: 0px;
+  margin: 0px;
   color: #1b263b;
   border-bottom: 1px solid #1b263b;
   font-size: 4em;
@@ -143,10 +142,11 @@ option {
   padding: 8px;
   text-align: center;
 }
-#Base-currency, #Target-currency {
-    text-align: center;
+#Base-currency,
+#Target-currency {
+  text-align: center;
 }
 
-.figures-containers{
-    flex: 0 8%;
+.figures-containers {
+  flex: 0 8%;
 }
