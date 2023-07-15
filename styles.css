@@ -122,6 +122,7 @@ nav {
   width: 50px;
  outline: none;
 
+
 }
 #convert-btn {
   padding: 15px;
@@ -133,6 +134,7 @@ nav {
   margin-top: 20px;
 }
 #exact-target-figure {
+    margin: 0px;
   padding:20px;
   color: #1b263b;
   border-bottom: 1px solid #1b263b;
@@ -146,13 +148,11 @@ option {
   padding: 8px;
   text-align: center;
 }
-#Base-currency {
+#Base-currency, #Target-currency {
    
     text-align: center;
 }
 
-#Target-currency {
-    
-    text-align: center;
-
+#Base-figure {
+    flex: 0 1 auto;
 }
