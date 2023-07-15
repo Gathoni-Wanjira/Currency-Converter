@@ -23,6 +23,9 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
 
 function populateCurrencies(currencies) {
+    baseCurrency.innerHTML = ""
+    targetCurrency.innerHTML = ""
+    
     currencies.forEach(currency => {
         const baseOption = document.createElement("option")
         baseOption.textContent = currency.short_code
@@ -30,6 +33,7 @@ function populateCurrencies(currencies) {
         baseCurrency.appendChild(baseOption);
 
         const targetOption = baseOption.cloneNode(true)
+        
         targetCurrency.appendChild(targetOption);
 
 
