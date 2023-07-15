@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
 function populateCurrencies(currencies) {
     baseCurrency.innerHTML = ""
     targetCurrency.innerHTML = ""
-    
+
     currencies.forEach(currency => {
         const baseOption = document.createElement("option")
         baseOption.textContent = currency.short_code
@@ -38,17 +38,22 @@ function populateCurrencies(currencies) {
 
 
     });
+
+    baseCurrency.value= "USD"
+    targetCurrency.value = "KES"
 }
 
 convertBtn.addEventListener("click", (e) => {
-    console.log("ghjhgf")
+    console.log("tester")
     e.preventDefault();
 
-    fetch(`https://api.currencybeacon.com/v1/convert?from=baseCurrency.value&to=targetCurrency.value&amount=inputAmount.value&api_key=${accessToken}`)
+    fetch(`https://api.currencybeacon.com/v1/convert?from=${baseCurrency.value}&to=${targetCurrency.value}&amount=${inputAmount.value}&api_key=${accessToken}`)
         .then(response => response.json())
         .then(conversion => {
             console.log(conversion);
+            document.getElementById("exact-target-figure").textContent = conversion.value.toFixed(2)
         })
+
 
 })
 
