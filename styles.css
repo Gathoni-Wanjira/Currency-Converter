@@ -4,10 +4,11 @@ body {
 }
 nav {
   display: flex;
-  padding: 8px;
+  padding: 0px 24px;
   justify-content: space-between;
   align-items: center;
   background-color: #1b263b;
+  
 }
 
 #logo {
@@ -103,13 +104,15 @@ nav {
 }
 #exact-base-figure {
   padding: 18px;
-  background-color: #1b263b;
-  color: #ede0d4;
-  border-radius: 10px;
+  color: #1b263b;
+  border: 0px;
+  border-bottom: 1px solid #1b263b;
   font-size: large;
   font-weight: bold;
-  width: 25px;
+  width: 50px;
  margin-top: 15px;
+ outline: none;
+
 }
 #convert-btn {
   padding: 15px;
@@ -122,11 +125,11 @@ nav {
 }
 #exact-target-figure {
   padding: 20px;
-  background-color: #1b263b;
-  color: #ede0d4;
-  border-radius: 10px;
+  color: #1b263b;
+  border-bottom: 1px solid #1b263b;
   font-size: large;
   font-weight: bold;
+  width: 50px;
 }
 option {
   border-radius: 5px;
