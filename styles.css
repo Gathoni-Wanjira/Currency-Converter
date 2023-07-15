@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
 nav {
   display: flex;
@@ -73,25 +74,29 @@ nav {
   justify-content: center;
   margin-top: 100px;
   gap: 100px;
+  align-items: center;
+  margin-bottom: 48px;
 }
 #exchange-icon {
-  width: auto;
+  display: inline-block;
+  width: 32px;
+  
 }
 #Base-currency {
-  padding: 32px;
+  padding: 12px;
   background-color: #1b263b;
   font-size: large;
   font-weight: bold;
-  border-radius: 12px;
+  border-radius: 4px;
   color: #ede0d4;
 }
 
 #Target-currency {
-  padding: 32px;
+  padding: 12px;
   background-color: #1b263b;
   font-size: large;
   font-weight: bold;
-  border-radius: 12px;
+  border-radius: 4px;
   color: #ede0d4;
 }
 #figures {
