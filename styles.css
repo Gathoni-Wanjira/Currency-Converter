@@ -78,7 +78,7 @@ nav {
   margin-top: 100px;
   gap: 100px;
   align-items: center;
-  margin-bottom: 48px;
+  margin-bottom: 96px;
 }
 #exchange-icon {
   display: inline-block;
@@ -104,10 +104,12 @@ nav {
 }
 #figures {
   display: flex;
-  margin: auto;
-  justify-content: center;
+  align-items: center;
   gap: 150px;
   margin-top: 30px;
+  align-items: flex-end;
+  justify-content: center;
+  
   
 }
 #exact-base-figure {
@@ -115,10 +117,9 @@ nav {
   color: #1b263b;
   border: 0px;
   border-bottom: 1px solid #1b263b;
-  font-size: large;
+  font-size: 4em;
   font-weight: bold;
   width: 50px;
- margin-top: 15px;
  outline: none;
 
 }
@@ -132,14 +133,26 @@ nav {
   margin-top: 20px;
 }
 #exact-target-figure {
-  padding: 20px;
+  padding:20px;
   color: #1b263b;
   border-bottom: 1px solid #1b263b;
-  font-size: large;
+  font-size: 4em;
   font-weight: bold;
   width: 50px;
 }
 option {
   border-radius: 5px;
   border: none;
+  padding: 8px;
+  text-align: center;
+}
+#Base-currency {
+   
+    text-align: center;
+}
+
+#Target-currency {
+    
+    text-align: center;
+
 }
