@@ -1,4 +1,4 @@
-const accessToken = "6jY5ZUmhFf4vw6ULUFhR4e9AJznJ01fO";
+const accessToken = "UeIitNnQSsny3h5drNl9QjffRrorZpaP";
 const baseCurrency = document.getElementById("Base-currency")
 const targetCurrency = document.getElementById("Target-currency")
 const convertBtn = document.getElementById("convert-btn")
@@ -9,7 +9,10 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
     fetch(`https://api.currencybeacon.com/v1/currencies?type=fiat&api_key=${accessToken}`)
 
-        .then(response => response.json())
+        .then(response => {
+            console.log(response);
+            return response.json()
+        })
         .then(currencies => {
             console.log(currencies);
             populateCurrencies(currencies);
