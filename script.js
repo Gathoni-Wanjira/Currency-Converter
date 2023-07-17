@@ -11,6 +11,9 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
         .then(response => {
             console.log(response);
+            if (response.status != 200) {
+                alert("Failed to connect. Try again later.")
+            }
             return response.json()
         })
         .then(currencies => {
@@ -36,13 +39,13 @@ function populateCurrencies(currencies) {
         baseCurrency.appendChild(baseOption);
 
         const targetOption = baseOption.cloneNode(true)
-        
+
         targetCurrency.appendChild(targetOption);
 
 
     });
 
-    baseCurrency.value= "USD"
+    baseCurrency.value = "USD"
     targetCurrency.value = "KES"
 }
 
