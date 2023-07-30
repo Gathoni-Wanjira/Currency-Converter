@@ -1,4 +1,4 @@
-const accessToken = "UeIitNnQSsny3h5drNl9QjffRrorZpaP";
+const accessToken = "d68c997763cf20f8cb34f586";
 const baseCurrency = document.getElementById("Base-currency")
 const targetCurrency = document.getElementById("Target-currency")
 const convertBtn = document.getElementById("convert-btn")
@@ -7,7 +7,7 @@ const inputAmount = document.getElementById("exact-base-figure")
 document.addEventListener("DOMContentLoaded", (e) => {
 
 
-    fetch(`https://api.currencybeacon.com/v1/currencies?type=fiat&api_key=${accessToken}`)
+    fetch(`https://v6.exchangerate-api.com/v6/${accessToken}/codes`)
 
         .then(response => {
             console.log(response);
@@ -32,10 +32,10 @@ function populateCurrencies(currencies) {
     baseCurrency.innerHTML = ""
     targetCurrency.innerHTML = ""
 
-    currencies.forEach(currency => {
+    currencies["supported_codes"].forEach(currency => {
         const baseOption = document.createElement("option")
-        baseOption.textContent = currency.short_code
-        baseOption.value = currency.short_code
+        baseOption.textContent = currency[1]
+        baseOption.value = currency[0]
         baseCurrency.appendChild(baseOption);
 
         const targetOption = baseOption.cloneNode(true)
@@ -53,13 +53,15 @@ convertBtn.addEventListener("click", (e) => {
     console.log("tester")
     e.preventDefault();
 
-    fetch(`https://api.currencybeacon.com/v1/convert?from=${baseCurrency.value}&to=${targetCurrency.value}&amount=${inputAmount.value}&api_key=${accessToken}`)
+    fetch(`https://v6.exchangerate-api.com/v6/${accessToken}/pair/${baseCurrency.value}/${targetCurrency.value}/${inputAmount.value}`)
+
         .then(response => response.json())
         .then(conversion => {
             console.log(conversion);
-            document.getElementById("exact-target-figure").textContent = conversion.value.toFixed(2)
+            document.getElementById("exact-target-figure").textContent = conversion["conversion_result"].toFixed(2)
         })
 
 
 })
 
+// d68c997763cf20f8cb34f586
