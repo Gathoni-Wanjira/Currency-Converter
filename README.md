@@ -39,7 +39,7 @@ The following languages have been used on this project:
 ---
 
 - HOMEPAGE.
-  <img src="./images/Home.jpeg" alt="Home screenshot" />
+  <img src="./images/NewHome.jpeg" alt="Home screenshot" />
 
 - SAMPLE EXCHANGE. 
   
